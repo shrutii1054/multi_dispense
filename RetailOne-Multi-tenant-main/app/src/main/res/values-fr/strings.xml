@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+    French strings file - reserved for future use.
+    French is currently NOT shown in the language selection UI.
+    Translations to be filled in later. Strings here intentionally only
+    override the language-selector display labels. All other strings fall
+    back to the default English values/strings.xml until translations are
+    added. Do not enable French in the selector until translations are
+    completed.
+-->
+<resources>
+    <string name="english">English</string>
+    <string name="french">Français</string>
+    <string name="portuguese">Portugais</string>
+    <string name="swahili">Swahili</string>
+    <string name="language_section">Langue</string>
+    <string name="select_language_title">Sélectionner la langue</string>
+    <string name="language_selected_toast">Langue changée en Français</string>
+
+    <!-- Quantity / stock validation messages -->
+    <string name="qty_cannot_exceed_stock">La quantité ne peut pas dépasser le stock.</string>
+    <string name="quantity_cannot_be_zero">La quantité ne peut pas être 0</string>
+    <string name="enter_qty_first">Saisissez la Qté d\'abord.</string>
+    <string name="cant_add_items_more_than_stocks">Impossible d\'ajouter plus d\'articles que le stock</string>
+    <!-- File validation messages -->
+    <string name="only_jpeg_png_allowed">Seuls les fichiers JPEG, JPG et PNG sont autorisés</string>
+    <string name="file_size_limit_300kb">La taille du fichier doit être inférieure à 300 Ko</string>
+    <!-- Generic error / status messages -->
+    <string name="something_went_wrong_msg">Une erreur s\'est produite : %1$s</string>
+    <string name="cancellation_pending">Annulation en attente</string>
+    <string name="stock_not_available">Le stock n\'est pas disponible.</string>
+    <!-- Display labels with format args -->
+    <string name="id_hash_label">ID: #%1$s</string>
+    <string name="dispatch_at_formatted">Expédié le : %1$s</string>
+    <!-- Order status compound strings -->
+    <string name="status_order_waiting_approval">Statut - Commande en attente d\'approbation</string>
+    <string name="status_order_approved_waiting_dispatch">Statut - Commande approuvée, en attente d\'expédition</string>
+    <string name="status_order_dispatched">Statut - Commande expédiée</string>
+    <string name="status_order_cancelled">Statut - Commande annulée</string>
+    <string name="status_order_received">Statut - Commande reçue avec succès</string>
+    <string name="status_dash">Statut -</string>
+    <!-- Item detail label prefixes (format strings) -->
+    <string name="purchase_qty_label">Achat -  %1$s</string>
+    <string name="rate_label_prefix">Taux -   %1$s</string>
+    <string name="refund_label_prefix">Remboursement -   %1$s</string>
+    <string name="name_colon_label">Nom : %1$s</string>
+    <string name="category_colon_label">Catégorie : %1$s</string>
+    <string name="amount_colon_label">Montant : %1$s</string>
+    <string name="date_colon_label">Date : %1$s</string>
+    <string name="id_dash_label">ID - %1$s</string>
+    <string name="batch_colon_label">Lot : %1$s</string>
+    <string name="stock_quantity_colon_label">Quantité en stock : %1$s</string>
+    <string name="reorder_level_colon_label">Niveau de réapprovisionnement : %1$s</string>
+    <!-- Payment type display labels -->
+    <string name="cash_label">Espèces</string>
+    <string name="mmoney_label">M-Argent</string>
+    <string name="petty_cash_label">Petite Caisse</string>
+    <string name="credit_card_label">Carte de Crédit</string>
+    <string name="debit_card_label">Carte de Débit</string>
+    <string name="error_parsing_date">Erreur lors de l\'analyse de la date</string>
+    <string name="insufficient_expected_cash_up">Montant attendu insuffisant pour la clôture de caisse</string>
+</resources>

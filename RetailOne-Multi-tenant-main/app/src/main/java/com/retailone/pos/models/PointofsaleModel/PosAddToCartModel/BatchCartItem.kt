@@ -1,0 +1,31 @@
+package com.retailone.pos.models.PointofsaleModel.PosAddToCartModel
+
+import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
+
+/*
+@Parcelize
+data class BatchCartItem(
+    val batchno: String,
+    val retail_price: Double,
+    val quantity: String,
+  //  val reorder_level: Int
+) : Parcelable*/
+@Parcelize
+data class BatchCartItem(
+    @SerializedName("batch_no") val batchno: String,             // keep your existing property name so other code compiles
+
+    @SerializedName("retail_price") val retail_price: Double,
+
+    // quantity in the JSON is a number (0). Keep it numeric to avoid parse errors.
+    // Changed Int -> Double so dispensed loose-oil quantities (e.g. 0.01 L,
+    // 2.5 L) are preserved through the AddToCart request instead of being
+    // truncated to 0 by toInt(). Whole-number quantities (1, 2, 3, ...) are
+    // unaffected because the JSON value is still a plain number.
+    @SerializedName("quantity") val quantity: Double,
+
+    @SerializedName("tax") val tax: String = "0", // Tax rate from batch (e.g., "18" for 18%)
+
+    @SerializedName("discount") val discount: Double
+) : Parcelable

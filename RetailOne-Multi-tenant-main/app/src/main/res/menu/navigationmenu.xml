@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/about_us"
+        android:title="@string/about_us"
+        android:icon="@drawable/svg_about_us"/>
+    <item
+        android:id="@+id/contact_us"
+        android:title="@string/contact_us"
+        android:icon="@drawable/svg_contact"/>
+
+
+    <item
+        android:id="@+id/log_data"
+        android:title="LogData (For Developers)"
+        android:icon="@drawable/expense_history"/>
+
+    <!-- english only: drawer language entry hidden for the english-only build.
+         Uncomment this <item> (and the matching R.id.language_section branch
+         in MPOSDashboardActivity) to restore in-drawer language selection.
+    <item
+        android:id="@+id/language_section"
+        android:title="@string/language_section"
+        android:icon="@drawable/ic_language"/>
+    -->
+    <!-- english only: end -->
+
+
+</menu>
