@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="3dp"
+            android:fontFamily="@font/avenirnextltpro_medium"
+            android:text="-"
+            android:textColor="@color/textlite"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirnextltpro_medium"
+            android:text="-"
+            android:gravity="center"
+            android:textColor="@color/textlite"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirnextltpro_medium"
+            android:text="-"
+            android:gravity="center"
+            android:textColor="#3949AB"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirnextltpro_medium"
+            android:text="-"
+            android:gravity="center"
+            android:textColor="@color/textlite"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirnextltpro_medium"
+            android:text="-"
+            android:gravity="center"
+            android:textColor="#E53935"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1" />
+
+</LinearLayout>
